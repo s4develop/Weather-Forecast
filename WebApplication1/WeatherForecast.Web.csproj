@@ -127,15 +127,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\chilly.jfif" />
-    <Content Include="Assets\cool.jfif" />
-    <Content Include="Assets\Freezing.jfif" />
+    <Content Include="Assets\Chilly.png" />
+    <Content Include="Assets\Col.png" />
+    <Content Include="Assets\Freezing.png" />
     <Content Include="Assets\Hot.png" />
-    <Content Include="Assets\Mild.jfif" />
-    <Content Include="Assets\Balmy.jfif" />
-    <Content Include="Assets\Scorching.jfif" />
-    <Content Include="Assets\sunny1.png" />
-    <Content Include="Assets\Sweltering.jfif" />
+    <Content Include="Assets\Balmy.png" />
+    <Content Include="Assets\Mild.png" />
+    <Content Include="Assets\Scorching.png" />
+    <Content Include="Assets\Sweltering.png" />
+    <Content Include="Assets\Warm.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />

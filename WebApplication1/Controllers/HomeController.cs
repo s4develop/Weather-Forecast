@@ -10,7 +10,7 @@ namespace WebApplication1.Controllers
     {
         private static readonly string[] Summaries = new[]
        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Freezing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
         public IEnumerable<WeatherForecast> Get()

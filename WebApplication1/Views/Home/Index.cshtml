@@ -8,10 +8,47 @@
     {
         <div class="col-lg-2">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="~/Assets/sunny1" alt="Card image cap">
+                @if (item.Summary.Equals("Freezing"))
+                {
+                    <img src="~/Assets/Freezing.png" />
+                }
+                else if (item.Summary.Equals("Balmy"))
+                {
+                    <img src="~/Assets/Balmy.png" />
+                }
+                else if (item.Summary.Equals("Cool"))
+                {
+
+                    <img src="~/Assets/Col.png" />
+                }
+                else if (item.Summary.Equals("Chilly"))
+                {
+                    <img src="~/Assets/Chilly.png" />
+                }
+                else if (item.Summary.Equals("Hot"))
+                {
+                    <img src="~/Assets/Hot.png" />
+                }
+                else if (item.Summary.Equals("Mild"))
+                {
+                    <img src="~/Assets/Mild.png" />
+                }
+                else if (item.Summary.Equals("Scorching"))
+                {
+                    <img src="~/Assets/Scorching.png" />
+                }
+                else if (item.Summary.Equals("Sweltering"))
+                {
+                    <img src="~/Assets/Sweltering.png" />
+                }
+                else if (item.Summary.Equals("Warm"))
+                {
+                    <img src="~/Assets/Warm.png" />
+                }
+                @*                <img class="card-img-top" src="@string.Format("~/Assets/{0}.png",item.Summary)" alt="Card image cap">*@
                 <div class="card-body">
                     <h5 class="card-title">@item.Date</h5>
-                    <h5 class="card-subtitle">@item.TemperatureC - @item.TemperatureF</h5>
+                    <h5 class="card-subtitle">@item.TemperatureC °C - @item.TemperatureF °F</h5>
                     <p class="card-text">@item.Summary</p>
                 </div>
             </div>
