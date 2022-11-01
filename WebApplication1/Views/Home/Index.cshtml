@@ -1,12 +1,39 @@
-﻿@{
+﻿@model IEnumerable<WebApplication1.Controllers.WeatherForecast>
+@{
     ViewBag.Title = "Home Page";
 }
 
 <div class="jumbotron">
     <h1>ASP.NET</h1>
+    @foreach (var item in Model)
+    {
+        <h3> @item.Date</h3>
+        <h3> @item.Summary</h3>
+        <h3> @item.TemperatureC</h3>
+    }
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+    </div>
+</div>
+
+
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nicepng.com%2Fourpic%2Fu2q8q8a9o0e6t4w7_sun-clipart-sunny-clip-art%2F&psig=AOvVaw2UMDdrjTCE99ux9lwDsIcE&ust=1667387448188000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCICm08PsjPsCFQAAAAAdAAAAABAD" alt="Card image cap">
+    <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+</div>
+
 
 <div class="row">
     <div class="col-md-4">
@@ -29,3 +56,4 @@
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>
+
