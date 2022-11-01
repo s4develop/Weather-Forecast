@@ -3,57 +3,18 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
+<div class="row">
     @foreach (var item in Model)
     {
-        <h3> @item.Date</h3>
-        <h3> @item.Summary</h3>
-        <h3> @item.TemperatureC</h3>
+        <div class="col-lg-2">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="~/Assets/sunny1" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Date</h5>
+                    <h5 class="card-subtitle">@item.TemperatureC - @item.TemperatureF</h5>
+                    <p class="card-text">@item.Summary</p>
+                </div>
+            </div>
+        </div>
     }
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
-
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-    </div>
-</div>
-
-
-
-<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nicepng.com%2Fourpic%2Fu2q8q8a9o0e6t4w7_sun-clipart-sunny-clip-art%2F&psig=AOvVaw2UMDdrjTCE99ux9lwDsIcE&ust=1667387448188000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCICm08PsjPsCFQAAAAAdAAAAABAD" alt="Card image cap">
-    <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-</div>
-
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
-
